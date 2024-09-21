@@ -615,6 +615,9 @@ body {
   background-color: var(--primary);
   cursor: pointer;
 }
+.contact h4{
+  text-align: center;
+}
 
 /* footer */
 footer {

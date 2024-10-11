@@ -28,3 +28,14 @@ document.addEventListener("click", function (e) {
     searchForm.classList.remove("active");
   }
 });
+
+//search active
+
+FileSystemEntry.addEventListener("input", (e) => filterdata(e.target.value));
+
+function filterdata(search) {
+  items.forEach((item) => {
+    if (item.innerText.toLowerCase().includes(search.toLowerCase())) {
+    }
+  });
+}

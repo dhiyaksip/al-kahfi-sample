@@ -728,8 +728,8 @@ main > div a:hover {
 /* image slider*/
 .slide-1 {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("img/WhatsApp\ Image\ 2024-09-24\ at\ 15.32.46_aefd7dfb.jpg") no-repeat
-      50% 50% / cover;
+    url("WhatsApp\ Image\ 2024-09-24\ at\ 15.32.46_aefd7dfb.jpg") no-repeat 50%
+      50% / cover;
 }
 
 /* contact section */

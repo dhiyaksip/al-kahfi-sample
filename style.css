@@ -731,6 +731,20 @@ main > div a:hover {
     url("WhatsApp\ Image\ 2024-09-24\ at\ 15.32.46_aefd7dfb.jpg") no-repeat 50%
       50% / cover;
 }
+.slide-2 {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("slide2.jpg") no-repeat 50% 50% / cover;
+}
+.slide-3 {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("WhatsApp\ Image\ 2024-09-24\ at\ 15.32.46_aefd7dfb.jpg") no-repeat 50%
+      50% / cover;
+}
+.slide-4 {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("WhatsApp\ Image\ 2024-09-24\ at\ 15.32.46_aefd7dfb.jpg") no-repeat 50%
+      50% / cover;
+}
 
 /* contact section */
 .contact .row {

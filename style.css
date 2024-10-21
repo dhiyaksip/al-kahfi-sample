@@ -45,12 +45,12 @@ body {
 .navbar .navbar-logo {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--primary);
+  color: #eee;
   font-style: italic;
 }
 
 .navbar .navbar-logo span {
-  color: var(--primary);
+  color: #eee;
 }
 
 .navbar .navbar-nav a {
@@ -295,6 +295,7 @@ body {
 }
 
 /* menu section style */
+
 .menu h2,
 .contact h2 {
   margin-bottom: 1rem;
@@ -331,6 +332,88 @@ body {
   margin: 1rem auto 0.5rem;
 }
 
+/* progam item */
+.wraperr {
+  padding: 10px 10%;
+  margin-bottom: -60px;
+}
+
+#card-area h2 {
+  text-align: center;
+}
+
+#card-area {
+  padding: 50px 0;
+}
+.box-area {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.overlay {
+  height: 0;
+  width: 100%;
+  background: linear-gradient(transparent, #1c1c1c 58%);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+.overlay h3 {
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-top: 80%;
+  font-family: bebas nue;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.overlay p {
+  color: #fff;
+}
+.overlay a {
+  margin-top: 10px;
+  color: #262626;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: var(--bg);
+  border-radius: 50px;
+  text-align: center;
+  padding: 5px 15px;
+}
+
+.boxLhover img {
+  transform: scale(1.2);
+}
+
+.box:hover .overlay {
+  height: 100%;
+}
+
 /* product section */
 .products .row {
   display: grid;
@@ -354,7 +437,7 @@ body {
 .products .product-icons a {
   width: 4rem;
   height: 4rem;
-  color: #090808;
+  color: black;
   margin: 0.3rem;
   border: 1px solid #666;
   border-radius: 50%;
@@ -373,7 +456,7 @@ body {
 }
 
 .products .product-image img {
-  height: 40rem;
+  height: 35rem;
 }
 
 .products .product-content h3 {
@@ -737,20 +820,18 @@ main > div a:hover {
 }
 .slide-3 {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("WhatsApp\ Image\ 2024-09-24\ at\ 15.32.46_aefd7dfb.jpg") no-repeat 50%
-      50% / cover;
+    url("img/doc.jpg") no-repeat 50% 50% / cover;
 }
 .slide-4 {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("WhatsApp\ Image\ 2024-09-24\ at\ 15.32.46_aefd7dfb.jpg") no-repeat 50%
-      50% / cover;
+    url("img/doc1.jpg") no-repeat 50% 50% / cover;
 }
 
 /* contact section */
 .contact .row {
   display: flex;
   margin-top: 2rem;
-  background-color: var(--bg);
+  background-color: rgba(1, 1, 1, 0.8);
   border: 1px solid var(--primary);
 }
 
@@ -915,6 +996,12 @@ footer .credit a {
 @media (max-width: 450px) {
   html {
     font-size: 70%;
+  }
+  .overlay a {
+    font-size: 70%;
+  }
+  .overlay h3 {
+    font-size: 100%;
   }
 }
 

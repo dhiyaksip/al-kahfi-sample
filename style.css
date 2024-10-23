@@ -354,7 +354,7 @@ body {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.251);
 }
 
 .box img {
@@ -823,7 +823,7 @@ main > div a:hover {
 }
 .slide-4 {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("img/doc1.jpg") no-repeat 50% 50% / cover;
+    url("img/doc14.jpg") no-repeat 50% 50% / cover;
 }
 
 /* contact section */

@@ -811,7 +811,7 @@ main > div a:hover {
 /* image slider*/
 .slide-1 {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("img/doc2.jpg") no-repeat 50% 50% / cover;
+    url("img/doc9.jpg") no-repeat 50% 50% / cover;
 }
 .slide-2 {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),

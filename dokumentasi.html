@@ -7,41 +7,37 @@
     <link rel="stylesheet" href="doc.css" />
   </head>
   <body>
-    <section class="gallery">
-      <div class="container">
-        <div class="row">
-          <div class="gallery-filter">
-            <span class="filter-item active" data-filter="all">all</span>
-            <span class="filter-item" data-filter="shoe">shoe</span>
-            <span class="filter-item" data-filter="headphone">headphone</span>
-            <span class="filter-item" data-filter="camera">camera</span>
-          </div>
+    <div class="wrapper">
+      <nav>
+        <div class="items">
+          <span class="item active" data-name="all">all</span>
+          <span class="item" data-name="bag">umroh</span>
+          <span class="item" data-name="shoe">haji</span>
         </div>
-        <div class="row">
-          <!--gallery item start-->
-          <div class="gallery-item shoe">
-            <div class="gallery-item-inner">
-              <img src="img/mutowif.jpg" alt="shoe" />
-            </div>
-          </div>
-          <!--gallery item end-->
-          <!--gallery item start-->
-          <div class="gallery-item shoe">
-            <div class="gallery-item-inner">
-              <img src="img/mutowif.jpg" alt="shoe" />
-            </div>
-          </div>
-          <!--gallery item end-->
-          <!--gallery item start-->
-          <div class="gallery-item shoe">
-            <div class="gallery-item-inner">
-              <img src="img/mutowif.jpg" alt="shoe" />
-            </div>
-          </div>
-          <!--gallery item end-->
+      </nav>
+      <!--iflter images-->
+      <div class="gallery">
+        <div class="image" data-name="bag">
+          <span><img src="img/doc3.jpg" alt="" /></span>
+        </div>
+        <div class="image" data-name="bag">
+          <span><img src="img/doc4.jpg" alt="" /></span>
+        </div>
+        <div class="image" data-name="shoe">
+          <span><img src="img/doc5.jpg" alt="" /></span>
+        </div>
+        <div class="image" data-name="bag">
+          <span><img src="img/doc6.jpg" alt="" /></span>
+        </div>
+        <div class="image" data-name="headphone">
+          <span><img src="img/doc7.jpg" alt="" /></span>
+        </div>
+        <div class="image" data-name="headphone">
+          <span><img src="img/doc8.jpg" alt="" /></span>
         </div>
       </div>
-    </section>
+    </div>
+
     <script src="scriptt.js"></script>
   </body>
 </html>

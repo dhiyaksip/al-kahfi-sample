@@ -1,21 +1,25 @@
-const filterContainer = document.querySelector(".gallery-filter"),
-  galleryItems = document.querySelectorAll(".gallery-item");
+//selecting all required elements
+const filterItem = document.querySelector(".items");
+const filterImg = document.querySelectorAll(".image");
 
-filterContainer.addEventListener("click", (event) => {
-  if (event.target.classList.contains("filter-item")) {
-    //deactive existing active 'filter-item'
-    filterContainer.querySelector(".active").classList.remove("active");
-    //activate new 'filter-item'
-    event.target.classList.add("active");
-    const filterValue = event.target.getAttribute("data-filter");
-    galleryItems.forEach((item) => {
-      if (item.classList.contains(filterValue) || filterValue === "all") {
-        item.classList.remove("hide");
-        item.classList.add("show");
-      } else {
-        item.classList.remove("show");
-        item.classList.add("hide");
-      }
-    });
-  }
-});
+window.onload = () => {
+  //one window loaded
+  filterItem.onclick = (selectedItem) => {
+    //when user clicked on filterItem div
+    if (selectedItem.target.classList.contains("item")) {
+      filterItem.querySelector(".active").classList.remove("active");
+      selectedItem.terget.classList.add("active");
+      let filterName = selectedItem.target.getAttribute("data-name");
+      filterImg.forEach((image) => {
+        let filterImages = image.getAttribute("data-name");
+        if (filterImages == filterName || filterName == "all") {
+          image.classList.remove("hide");
+          image.classList.add("show");
+        } else {
+          image.classList.add("hide");
+          image.classList.remove("show");
+        }
+      });
+    }
+  };
+};
